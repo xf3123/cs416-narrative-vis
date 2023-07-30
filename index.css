@@ -1,0 +1,23 @@
+.chart-container {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 500px;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+  padding: 8px;
+  font-size: 12px;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px;
+  position: relative;
+}

@@ -1,1 +1,54 @@
-<h1>hi</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COVID-19 Data per State</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1 id="intro">COVID-19 Data per State - Can Any Trends Be Made?</h1>
+  <h2>By Jonathan Yan</h2>
+  <h3>
+    As COVID-19 has subsidized in the United States, it is important to look at the data and see how each state has been affected. This visualization shows the number of cases and deaths per state, the state's number of medical resources, and the state's unemployment rate to see if there are any trends amongst the states. The data is from the <a href="https://www.kaggle.com/datasets/nightranger77/covid19-state-data"> COVID-19 State Data</a> from Kaggle and includes data from 2020, when the pandemic first arose.
+  </h3>
+
+  <div class="chart-container" id="scene1"></div>
+  <button id="totalButton">Change to Total Number of Cases</button>
+  <button id="percentageButton">Change to Percentage of Population Infected</button>
+
+  <h4>
+    In the graphs above, it is apparent that the number of cases varies depending on the state, many factors can contribute to this such as population, number of medical resources, wealth, and more. Although it may seem like some states have more cases, this does not necessarily mean that they were more or less prepared for the pandemic as when changing the graph to display the percentage of the population infected, the data becomes more normalized.
+  </h4>
+
+  <div class="chart-container" id="scene2"></div>
+  <button id="physicianButton">Change to Number Physicians</button>
+  <button id="hospitalButton">Change to Number Hospitals</button>
+  <button id="fundingButton">Change to Health Spending</button>
+  <h4>
+    These graphs display the medical resources in the state at their given year. The number of physicians per state does correlate with each state's population, with California, New York, Texas, and Florida being the largest, fitting with their populations as well. The number of hospitals per state drops evens out more. This is likely due to population density of the state as there is not much need for many hospitals if the state is smaller, like Delaware or if the state has a high concentration of people in a certain area, like New York. What is surprising is the Health Spending per Capita as it is practically even for all states right before the pandemic occurred. 
+  </h4>
+
+  <div class="chart-container" id="scene3"></div>
+  <button id="unemploymentButton">Change to Unemployment Rate</button>
+  <button id="gdpButton">Change to GDP</button>
+  <h4>
+    These graphs display the economic data of each state. The data for both of the graphs is similar to the percentage of population infected by COVID-19 graph, but shows no direct correlation or clear trend. This is likely due to the fact that the pandemic affected all states, regardless of their economic status and also means that economic status had little effect on the number of cases in each state.
+  </h4>
+
+  <h3>
+    Although there are some trends that can be seen in the data, there is no clear correlation between the number of cases and the number of medical resources or economic status of the state. This means that the pandemic affected all states, regardless of their economic status or resources prior. This could be due to the fact that the pandemic was a new disease and that no one was prepared for it, regardless of the state's economic status or number of medical resources. Trends or relationships between the data could have been more clear if the data included more years, but the data only included 2020, the year the pandemic started.
+  </h3>
+
+  <h3>
+    Dataset: <a href="https://www.kaggle.com/datasets/nightranger77/covid19-state-data"> https://www.kaggle.com/datasets/nightranger77/covid19-state-data</a><br>
+    <br>
+    Source Code: <a href="https://github.com/xf3123/cs416-narrative-vis"> https://github.com/xf3123/cs416-narrative-vis</a><br>
+    <br>
+    JS References: <a href="https://d3-graph-gallery.com/index.html">https://d3-graph-gallery.com/index.html</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript  ">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a>
+
+  </h3>
+
+  <script src="index.js"></script>
+</body>
+</html>
